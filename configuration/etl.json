@@ -1,0 +1,29 @@
+{
+  "extract": [
+    {
+      "table_name": "flight",
+      "columns": [
+        "id",
+        "aircraft_model",
+        "airline_icao",
+        "airline_name",
+        "origin_airport_iata",
+        "origin_airport_name",
+        "destination_airport_iata",
+        "destination_airport_name",
+        "origin_airport_continent",
+        "destination_airport_continent",
+        "distance_origine_destination_airports_km"
+      ],
+      "output_path": "data/raw/flight/"
+    }
+  ],
+  "transform": {
+    "input_path": "data/raw/flight/",
+    "output_path": "data/transformed/"
+  },
+  "load": {
+    "input_path": "data/transformed/"
+  }
+}
+
